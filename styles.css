@@ -9,12 +9,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 
-  --primary-text-color: #181820;
-  --secondary-text-color: #5c5c62;
+  --primary-text-color: #181820cb;
+  --secondary-text-color: #1d2d27;
   --durability-text-color: #6a737d9c;
-  --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
+  --icon-color: #478e4d;
+  --border-color: #00650045;
+  --text-decoration-color: #0c9400;
 }
 
 .container {
