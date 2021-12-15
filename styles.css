@@ -23,6 +23,10 @@ body {
   max-width: 900px;
 }
 
+.header {
+  text-transform: uppercase;
+}
+
 .fh {
   display: flex;
   flex-direction: row;
@@ -125,11 +129,9 @@ body {
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
-  border: 3px solid;
-  border-color: var(--text-decoration-color);
 }
 
 /* Intro and skills styles */
@@ -172,8 +174,8 @@ body {
 
 /* Experience and additonal info styles */
 .experiences {
-  flex: 1 1 60%;
-  margin-right: 50px;
+  flex: 1 1 35%;
+  margin-right: 20px;
 }
 
 .experiences__header {
@@ -224,6 +226,8 @@ body {
 .experiences__company-project-item {
   color: var(--secondary-text-color);
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .experiences__company-project-technology {
@@ -233,6 +237,7 @@ body {
 
 .additional-info {
   flex: 1 1 40%;
+  margin-right: 20px;
 }
 
 .additional-info__education {
@@ -275,4 +280,30 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.timeline-info {
+  flex: 1 1 30%;
+}
+
+.timeline-info__header {
+  color: var(--secondary-text-color);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.timeline-info__list-item {
+  color: var(--secondary-text-color);
+}
+
+.timeline-info__list {
+  margin-bottom: 20px;
+  list-style: none;
+  flex: 1 1 0%;
+}
+.timeline-info__-durability {
+  color: var(--durability-text-color);
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 15px;
 }
