@@ -27,6 +27,11 @@ body {
   text-transform: uppercase;
 }
 
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 .fh {
   display: flex;
   flex-direction: row;
