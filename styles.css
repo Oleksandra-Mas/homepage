@@ -16,6 +16,7 @@ body {
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
 }
+
 .container {
   margin: 0 auto;
   padding: 0 30px;
@@ -219,10 +220,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .experiences__company-project-item {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
+
 .experiences__company-project-technology {
   font-weight: 700;
   color: var(--primary-text-color);
