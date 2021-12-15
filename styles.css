@@ -198,15 +198,15 @@ body {
 }
 
 .experiences__company-project {
-  margin-left: 15px;
   margin-bottom: 25px;
 }
 
 .experiences__company-project-role {
-  color: var(--durability-text-color);
+  color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 10px;
   font-size: 15px;
+  font-weight: 700;
 }
 
 .experiences__company-project-name {
@@ -215,9 +215,20 @@ body {
   margin-bottom: 10px;
 }
 
-.experiences__company-project-responsibilities {
-  color: var(--secondary-text-color);
+.experiences__company-project-info {
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.experiences__company-project-item {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.experiences__company-project-technology {
+  font-weight: 700;
+  color: var(--primary-text-color);
 }
 
 .additional-info {
@@ -253,6 +264,7 @@ body {
 
 .additional-info__languages {
   margin-bottom: 20px;
+  flex: 1 1 0%;
 }
 
 .additional-info__languages-header {
