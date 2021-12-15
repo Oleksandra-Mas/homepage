@@ -27,6 +27,11 @@ body {
   text-transform: uppercase;
 }
 
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 .fh {
   display: flex;
   flex-direction: row;
@@ -51,25 +56,6 @@ body {
   border-bottom: 3px solid var(--border-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
-}
-
-@media screen and (max-width: 576px) {
-  .main-info,
-  .contact_info_container {
-    flex-direction: column;
-  }
-
-  .contact_info_container {
-    align-items: center;
-  }
-
-  .contact-info__block:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .experiences {
-    margin-right: 0;
-  }
 }
 
 /* Contact info styles */
@@ -134,7 +120,7 @@ body {
   object-fit: cover;
 }
 
-/* Intro and skills styles */
+/* Intro and personal styles */
 .intro {
   display: flex;
   justify-content: start;
@@ -161,15 +147,36 @@ body {
   text-align: justify;
 }
 
-.skills__header {
+.skills__header,
+.likes__header,
+.dislikes__header {
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 15px;
 }
 
-.skills__text {
+.skills__item,
+.likes__item,
+.dislikes__item {
   color: var(--secondary-text-color);
-  text-align: justify;
+  text-align: center;
+}
+
+.skills,
+.likes,
+.dislikes {
+  flex: 1 1 20%;
+}
+
+.skills,
+.likes {
+  margin-right: 20px;
+}
+
+.skills-list,
+.likes-list,
+.dislikes-list {
+  list-style: none;
 }
 
 /* Experience and additonal info styles */
@@ -301,9 +308,35 @@ body {
   list-style: none;
   flex: 1 1 0%;
 }
-.timeline-info__-durability {
+
+.timeline-info__durability {
   color: var(--durability-text-color);
   text-align: left;
   margin-bottom: 10px;
   font-size: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .main-info,
+  .contact_info_container,
+  .personal-info {
+    flex-direction: column;
+  }
+
+  .contact_info_container {
+    align-items: center;
+  }
+
+  .contact-info__block:not(:last-child),
+  .skills,
+  .likes {
+    margin-bottom: 20px;
+  }
+
+  .experiences,
+  .likes,
+  .dislikes,
+  .skills {
+    margin-right: 0;
+  }
 }
